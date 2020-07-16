@@ -1,3 +1,10 @@
+## [1.32.1](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.32.0...v1.32.1) (2020-07-16)
+
+
+### Bug Fixes
+
+* change default lang to de ([db8c71f](https://github.com/bet-smart-parking/smart-parking-frontend/commit/db8c71f72adafc72ac791df0ffaf739a92f7481f))
+
 # [1.32.0](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.31.6...v1.32.0) (2020-07-08)
 
 
