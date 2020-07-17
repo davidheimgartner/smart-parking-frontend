@@ -7,8 +7,8 @@
         <Content>Kameraüberwacht</Content>
       </div>
       <div class="category">
-        <v-img :src="require('@/assets/wheelchair.svg')"></v-img>
-        <Content>Rollstuhlzugänglich</Content>
+        <v-img class="no" :src="require('@/assets/wheelchair.svg')"></v-img>
+        <Content>Nicht barrierefrei</Content>
       </div>
       <div class="category">
         <v-img class="no" :src="require('@/assets/restroom.svg')"></v-img>
