@@ -119,7 +119,7 @@ export default {
       alert: {
         title: "Aktion fehlgeschlagen",
         text:
-          "Überprüfe deine Eingaben. <br /><br />Kann es sein, dass du bereits mit deiner Mobile Nummer eine Reservation / Buchung am laufen hast.",
+          "Überprüfe deine Eingaben. <br /><br />Kann es sein, dass du bereits mit deiner Mobile Nummer eine Reservation / Buchung am laufen hast?",
       },
       verification: {
         title: "Verifikation",
@@ -142,7 +142,7 @@ export default {
       appBarTitle: "SMS Verifikation",
       subtitle: "Bist Du es?",
       explanation:
-        " Zu Deiner Sicherheit möchten wir verifizieren, dass Du es wirklich bist.",
+        "Zu Deiner Sicherheit möchten wir verifizieren, dass Du es wirklich bist.",
       code: {
         label: "Bestätigungscode",
       },
@@ -155,7 +155,7 @@ export default {
       alert: {
         title: "Bestätigungscode ungültig!",
         text:
-          "Ihre Eingabe war ungültig. Bitte versuch es erneut oder sende dir einen neuen Bestätigungscode zu.",
+          "Deine Eingabe war ungültig. Bitte versuche es erneut oder sende dir einen neuen Bestätigungscode zu.",
         button: "Code erneut senden",
       },
       snackbar: {
@@ -219,7 +219,7 @@ export default {
         },
         success: "Tor öffnet sich",
         error:
-          "Das Tor kann gerade nicht geöffnet werden. Bitte versuch es erneut oder kontaktier uns.",
+          "Das Tor kann gerade nicht geöffnet werden. Bitte versuche es erneut oder kontaktiere uns.",
       },
       description: "Beschreibung",
       currentParkingTime: "Aktuelle Parkzeit",
@@ -233,7 +233,7 @@ export default {
       },
     },
     payment: {
-      appBarTitle: "Abrechung",
+      appBarTitle: "Abrechnung",
       location: "Parkort",
       start: "Einfahrt",
       end: "Ausfahrt",
@@ -244,12 +244,12 @@ export default {
       alert: {
         title: "Bezahlung fehlgeschlagen",
         text:
-          "Leider ist die Bezahlung fehlgeschlagen. Versuchen es erneut oder kontaktier uns.",
+          "Leider ist die Bezahlung fehlgeschlagen. Versuche es erneut oder kontaktiere uns.",
       },
       isLoading: {
         title: "Bezahlung im Gange",
         text:
-          "Die Zahlung wird überprüft. Bitte warten du wirst automatisch weitergeleitet.",
+          "Die Zahlung wird überprüft. Bitte warten, du wirst automatisch weitergeleitet.",
       },
     },
     confirmation: {
@@ -259,7 +259,7 @@ export default {
         text: "Benötigst du eine Quittung?",
         button: "Quittung öffnen",
         error:
-          "Leider konnte die Quittung nicht versendet werden. Bitte melden dich beim Administrator.",
+          "Leider konnte die Quittung nicht versendet werden. Bitte melde dich beim Administrator.",
       },
       feedback: {
         text:
@@ -272,7 +272,7 @@ export default {
       title: "Quittung",
       navigate: { home: "Zurück zur Startseite" },
       text:
-        'Solltest du Fragen haben, wende dich bitte an <a href="mailto:smart_parking@baloise.ch">smart_parking@baloise.ch</a>',
+        'Solltest du Fragen haben, wende dich bitte an <a href="mailto:parcandi@baloise.ch">parcandi@baloise.ch</a>',
       taxLabel: "Mehrwertsteuer-Nr.",
       greets: "Freundliche Grüsse Parcandi",
     },
@@ -305,16 +305,16 @@ export default {
   },
   notFound: {
     title: "Oops!",
-    subtitle: "Es tut uns Leid, diese Seite ist nicht verfügbar",
+    subtitle: "Es tut uns Leid, diese Seite ist nicht verfügbar.",
     content:
-      "Buchung nicht gefunden oder einem fehlerhaften Link gefolgt? Kehre zur Startseite zurück und versuch es erneut oder überprüfe deine SMS Nachrichten.",
+      "Buchung nicht gefunden oder einem fehlerhaften Link gefolgt? Kehre zur Startseite zurück und versuche es erneut oder überprüfe deine SMS Nachrichten.",
     linkToHome: "Zur Startseite zurück",
   },
   admin: {
     logout: "Abmelden",
     title: "Admin Dashboard",
     dashboard: {
-      title: "Park Objekte",
+      title: "Parkobjekte",
     },
     navigate: {
       back: "Zurück",
@@ -369,7 +369,7 @@ export default {
         reserved: "Reservation",
         started: "Buchung",
         stopped: "In Bezahlung",
-        payed: "Bezahlung ausgelösst",
+        payed: "Bezahlung ausgelöst",
         deleted: "Gelöscht",
       },
     },
