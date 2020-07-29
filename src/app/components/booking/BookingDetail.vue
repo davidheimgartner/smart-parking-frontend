@@ -1,6 +1,17 @@
 <template>
   <section class="booking-detail">
     <v-divider />
+
+    <v-alert
+        v-model="isSmsAlertOpen"
+        close-text="Close SMS Alert"
+        color="light-blue lighten-5"
+        dismissible
+        transition="scale-transition"
+        >
+        {{ $t('booking.detail.notification.sms') }}
+    </v-alert>
+
     <div class="gate-button" v-for="gate in gates" :key="gate.id">
       <Subtitle>
         {{ $t("booking.detail.gates." + gate.id + ".title") }}
@@ -69,6 +80,7 @@ export default defineComponent({
   },
   setup(props, { emit }) {
     const isConfirmDialogOpen = ref(false)
+    const isSmsAlertOpen = ref(true)
     const gates = ref<GateModel[]>([])
 
     const closeDialog = () => (isConfirmDialogOpen.value = false)
@@ -84,6 +96,7 @@ export default defineComponent({
     return {
       gates,
       isConfirmDialogOpen,
+      isSmsAlertOpen,
       openDialog,
       closeDialog,
       stop: () => {
