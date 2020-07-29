@@ -198,6 +198,7 @@ export default {
       navigate: "ZUM PARKHAUS NAVIGIEREN",
       notification: {
         sms : "Wir haben Dir eine SMS mit einem Link geschickt, der Dich jederzeit zu diesem Bildschirm zurück führt.",
+        closeText: "Close SMS Alert",
       },
       finish: {
         title: "Fertig mit parken?",

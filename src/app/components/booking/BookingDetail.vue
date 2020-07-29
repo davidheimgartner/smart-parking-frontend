@@ -4,7 +4,7 @@
 
     <v-alert
         v-model="isSmsAlertOpen"
-        close-text="Close SMS Alert"
+        :close-text="$t('booking.detail.notification.closeText')"
         color="light-blue lighten-5"
         dismissible
         transition="scale-transition"
