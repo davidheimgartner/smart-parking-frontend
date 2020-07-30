@@ -1,14 +1,14 @@
 <svg width="320" height="320" viewBox="0 0 320 320" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <circle cx="158" cy="160" r="130" fill="#CFD8DC"/>
-<path d="M147.2 174C147.2 171.239 149.439 169 152.2 169H154V264H147.2V174Z" fill="#90A4AE"/>
-<path d="M146 257.125C146 254.364 148.239 252.125 151 252.125H154V264H146V257.125Z" fill="#90A4AE"/>
-<path d="M160.667 174C160.667 171.239 158.428 169 155.667 169H154V264H160.667V174Z" fill="#78909C"/>
-<path d="M162 257.125C162 254.364 159.761 252.125 157 252.125H154V264H162V257.125Z" fill="#78909C"/>
-<rect x="109" y="72" width="90" height="107" rx="6" fill="#90A4AE"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M192.612 72H154.475V179H192.612C195.926 179 198.612 176.314 198.612 173V78C198.612 74.6863 195.926 72 192.612 72Z" fill="#78909C"/>
-<rect x="113" y="76" width="80" height="98" rx="6" fill="#1976D2"/>
-<rect x="128" y="95" width="57" height="57" fill="url(#pattern0)"/>
-<rect x="29" y="264" width="250" height="4" rx="2" fill="#37474F" fill-opacity="0.7"/>
+<path d="M151.2 176C151.2 173.239 153.439 171 156.2 171H158V266H151.2V176Z" fill="#90A4AE"/>
+<path d="M150 259.125C150 256.364 152.239 254.125 155 254.125H158V266H150V259.125Z" fill="#90A4AE"/>
+<path d="M164.667 176C164.667 173.239 162.428 171 159.667 171H158V266H164.667V176Z" fill="#78909C"/>
+<path d="M166 259.125C166 256.364 163.761 254.125 161 254.125H158V266H166V259.125Z" fill="#78909C"/>
+<rect x="113" y="74" width="90" height="107" rx="6" fill="#90A4AE"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M196.612 74H158.475V181H196.612C199.926 181 202.612 178.314 202.612 175V80C202.612 76.6863 199.926 74 196.612 74Z" fill="#78909C"/>
+<rect x="117" y="78" width="80" height="98" rx="6" fill="#1976D2"/>
+<rect x="132" y="97" width="57" height="57" fill="url(#pattern0)"/>
+<rect x="33" y="266" width="250" height="4" rx="2" fill="#37474F" fill-opacity="0.7"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.00657895)"/>
