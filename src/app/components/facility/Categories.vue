@@ -4,15 +4,15 @@
     <section class="categories">
       <div class="category">
         <v-img :src="require('@/assets/camera.svg')"></v-img>
-        <Content>Kameraüberwacht</Content>
+        <Content>{{ $t("facility.features.cameraRecording") }}</Content>
       </div>
       <div class="category">
-        <v-img :src="require('@/assets/wheelchair.svg')"></v-img>
-        <Content>Rollstuhlzugänglich</Content>
+        <v-img class="no" :src="require('@/assets/wheelchair.svg')"></v-img>
+        <Content>{{ $t("facility.features.noWheelchair") }}</Content>
       </div>
       <div class="category">
         <v-img class="no" :src="require('@/assets/restroom.svg')"></v-img>
-        <Content>Kein WC</Content>
+        <Content>{{ $t("facility.features.noWC") }}</Content>
       </div>
     </section>
   </section>

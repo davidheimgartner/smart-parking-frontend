@@ -61,6 +61,11 @@ export default {
     },
   },
   facility: {
+    features: {
+      cameraRecording: "Kameraüberwacht",
+      noWheelchair: "Nicht barrierefrei",
+      noWC: "Kein WC",
+    },
     detail: {
       appBarTitle: "Picasso Platz",
       slots: "{amount} Plätze verfügbar",
