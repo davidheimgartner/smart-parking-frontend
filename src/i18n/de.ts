@@ -303,6 +303,10 @@ export default {
       title: "Bezahlung",
       text: "Zahle nur die genutzte Parkzeit",
     },
+    step4: {
+      title: "Kennzeichnung",
+      text: "Du erkennst die Einfahrt am Parcandi Logo",
+    },
   },
   maintenance: {
     title: "Oops...",
