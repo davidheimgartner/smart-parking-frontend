@@ -61,12 +61,18 @@ export default {
     },
   },
   facility: {
+    features: {
+      cameraRecording: "Kameraüberwacht",
+      noWheelchair: "Nicht barrierefrei",
+      noWC: "Kein WC",
+    },
     detail: {
       appBarTitle: "Picasso Platz",
       slots: "{amount} Plätze verfügbar",
       prices: "Preise",
       openingHours: "Öffnungszeiten",
       location: "Standort",
+
       booking: {
         title: "Bist du schon da? Dann buche direkt!",
         label: "Jetzt parken",
