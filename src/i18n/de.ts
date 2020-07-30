@@ -72,7 +72,6 @@ export default {
       prices: "Preise",
       openingHours: "Öffnungszeiten",
       location: "Standort",
-
       booking: {
         title: "Bist du schon da? Dann buche direkt!",
         label: "Jetzt parken",
