@@ -4,6 +4,7 @@ export const appConfig = {
   appPath: process.env.VUE_APP_PATH as string,
   apiPath: process.env.VUE_APP_API_PATH as string,
   storagePath: process.env.VUE_APP_STORAGE_PATH as string,
+  datatransLibSrc: process.env.VUE_APP_DATATRANS_LIB_SRC as string,
   version: JSON.parse(decodeURI(process.env.PACKAGE_JSON as string)).version,
   analytics: {
     apiKey: process.env.VUE_ANALYTICS_APIKEY as string,
