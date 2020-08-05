@@ -23,10 +23,17 @@
       @skip="skip()"
     />
     <TutorialCarouselItem
-      last
       :title="$t('tutorial.step3.title')"
       :text="$t('tutorial.step3.text')"
       :image="'step-3.svg'"
+      @next="next()"
+      @skip="skip()"
+    />
+    <TutorialCarouselItem
+      last
+      :title="$t('tutorial.step4.title')"
+      :text="$t('tutorial.step4.text')"
+      :image="'step-4.svg'"
       @next="next()"
       @skip="skip()"
     />
@@ -49,7 +56,7 @@ export default defineComponent({
     }
 
     function next() {
-      if (carousel.value === 2) {
+      if (carousel.value === 3) {
         return skip()
       }
       carousel.value = carousel.value + 1

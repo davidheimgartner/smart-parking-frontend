@@ -32,10 +32,10 @@ export default {
   },
   home: {
     appBarTitle: "",
-    title: "Finde deinen Parkplatz",
+    title: "Finde Deinen Parkplatz",
     motto: "“Einfach und bequem parken”",
     first: "1. Finde und buche einen Parkplatz",
-    second: "2. Parke so lange du willst",
+    second: "2. Parke so lange Du willst",
     third: "3. Zahle nur die genutzte Parkzeit",
     paymentMethods: "Mögliche Zahlungsmethoden",
   },
@@ -61,6 +61,11 @@ export default {
     },
   },
   facility: {
+    features: {
+      cameraRecording: "Kameraüberwacht",
+      noWheelchair: "Nicht barrierefrei",
+      noWC: "Kein WC",
+    },
     detail: {
       appBarTitle: "Picasso Platz",
       slots: "{amount} Plätze verfügbar",
@@ -68,16 +73,16 @@ export default {
       openingHours: "Öffnungszeiten",
       location: "Standort",
       booking: {
-        title: "Bist du schon da? Dann buche direkt!",
+        title: "Bist Du schon da? Dann buche direkt!",
         label: "Jetzt parken",
         hint:
-          'Wenn du auf "jetzt parken" klickst, beginnt dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.',
+          'Wenn Du auf "jetzt parken" klickst, beginnt Dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.',
       },
       reserve: {
         title: "Parkplatz kostenlos für 60 Min reservieren?",
         label: "Jetzt reservieren",
         hint:
-          "Du kannst bis zu einer Stunde kostenlos einen Parkplatz reservieren. Sobald du später auf “Tor öffnen” klickst, ist die Buchung kostenpflichtig.",
+          "Du kannst bis zu einer Stunde kostenlos einen Parkplatz reservieren. Sobald Du später auf “Tor öffnen” klickst, ist die Buchung kostenpflichtig.",
       },
       navigate: "navigieren",
     },
@@ -101,7 +106,7 @@ export default {
       },
       mobile: {
         hint:
-          "Damit wir deine Buchungsbestätigung per SMS senden und dich in Ausnahmesituationen kontaktieren können.",
+          "Damit wir Deine Buchungsbestätigung per SMS senden und Dich in Ausnahmesituationen kontaktieren können.",
         label: "Telefonnummer",
         submit: "Verifizieren",
       },
@@ -114,12 +119,12 @@ export default {
         },
       },
       agb:
-        "Mit dem Klick auf “starten” akzeptierst du die AGB und Datenschutzinformationen.",
+        "Mit dem Klick auf “starten” akzeptierst Du die AGB und Datenschutzinformationen.",
       submit: "starten",
       alert: {
         title: "Aktion fehlgeschlagen",
         text:
-          "Überprüfe deine Eingaben. <br /><br />Kann es sein, dass du bereits mit deiner Mobile Nummer eine Reservation / Buchung am laufen hast?",
+          "Überprüfe Deine Eingaben. <br /><br />Kann es sein, dass Du bereits mit Deiner Mobile Nummer eine Reservation / Buchung am laufen hast?",
       },
       verification: {
         title: "Verifikation",
@@ -128,12 +133,12 @@ export default {
         title: "Bestätigung",
         reservation: {
           hint:
-            "Du kannst bis zu einer Stunde kostenlos einen Parkplatz reservieren. Sobald du später auf “Tor öffnen” klickst, ist die Buchung kostenpflichtig.",
+            "Du kannst bis zu einer Stunde kostenlos einen Parkplatz reservieren. Sobald Du später auf “Tor öffnen” klickst, ist die Buchung kostenpflichtig.",
           action: "Reservation starten",
         },
         booking: {
           hint:
-            'Wenn du auf "Buchung starten" klickst, beginnt dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.',
+            'Wenn Du auf "Buchung starten" klickst, beginnt Dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.',
           action: "Buchung starten",
         },
       },
@@ -142,25 +147,25 @@ export default {
       appBarTitle: "SMS Verifikation",
       subtitle: "Bist Du es?",
       explanation:
-        "Zu Deiner Sicherheit möchten wir verifizieren, dass Du es wirklich bist.",
+        "Zu Deiner Sicherheit möchten wir verifizieren, dass es wirklich Du bist.",
       code: {
         label: "Bestätigungscode",
       },
       mobile: {
         hint:
-          "Bitte gebe deinen 6-stelligen Bestätigungscode, welche du per SMS bekommen hast, hier ein.",
+          "Bitte gib Deinen 6-stelligen Bestätigungscode, welchen Du per SMS bekommen hast, hier ein.",
       },
       next: "Weiter",
       submit: "Reservation starten",
       alert: {
         title: "Bestätigungscode ungültig!",
         text:
-          "Deine Eingabe war ungültig. Bitte versuche es erneut oder sende dir einen neuen Bestätigungscode zu.",
+          "Deine Eingabe war ungültig. Bitte versuche es erneut oder sende Dir einen neuen Bestätigungscode zu.",
         button: "Code erneut senden",
       },
       snackbar: {
         text:
-          "Ein Textnachricht mit einem neuen Bestätigungscode wurde dir zugesendet.",
+          "Ein Textnachricht mit einem neuen Bestätigungscode wurde Dir zugesendet.",
       },
     },
     reservation: {
@@ -182,9 +187,9 @@ export default {
         title: "Bestätigung",
         text: {
           money:
-            "Wenn du auf “Starten” klickst, beginnt dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.",
+            "Wenn du auf “Starten” klickst, beginnt Dein kostenpflichtiges Parken. Du bezahlst am Ende der Parkzeit.",
           time:
-            "Du kannst parken, solange du willst.<br/>Denk daran, dass du nur während der Öffnungszeiten ins Parkhaus kommst.",
+            "Du kannst parken, solange Du willst.<br/>Denk daran, dass Du nur während der Öffnungszeiten ins Parkhaus kommst.",
         },
         agree: "Starten",
         disagree: "Zurück",
@@ -196,26 +201,30 @@ export default {
     detail: {
       appBarTitle: "Dein Parkplatz",
       navigate: "ZUM PARKHAUS NAVIGIEREN",
+      notification: {
+        sms : "Wir haben Dir eine SMS mit einem Link geschickt, der Dich jederzeit zu diesem Bildschirm zurück führt.",
+        closeText: "Close SMS Alert",
+      },
       finish: {
         title: "Fertig mit parken?",
         label: "PARKEN BEENDEN",
         hint:
-          "Beende das Parken beim Zurückkehren zum Parkhaus. Du bezahlst, sobald du auf “Parken beenden” geklickt hast.",
+          "Beende das Parken beim Zurückkehren zum Parkhaus. Du bezahlst, sobald Du auf “Parken beenden” geklickt hast.",
       },
       openMainGateForTheFirstTimeHint:
-        "Sobald du auf “Tor öffnen” klickst, startet die kostenpflichtige Parkzeit. Du bezahlst, sobald du auf “Parken beenden” geklickt hast.",
+        "Sobald Du auf “Tor öffnen” klickst, startet die kostenpflichtige Parkzeit. Du bezahlst, sobald Du auf “Parken beenden” geklickt hast.",
       gates: {
-        title: "Bist du schon da? Dann öffne das Tor!",
+        title: "Bist Du schon da? Dann öffne das Tor!",
         main: {
-          title: "Bist du schon da? Dann öffne das Tor!",
+          title: "Bist Du schon da? Dann öffne das Tor!",
           label: "TOR ÖFFNEN",
           hint: "",
         },
         pedestrian: {
-          title: "Möchtest du zu Fuss zurück ins Gebäude?",
+          title: "Möchtest Du zu Fuss zurück ins Gebäude?",
           label: "FUSSGÄNGER-TüR ÖFFNEN",
           hint:
-            "Wo sich der Fussgängereingang befindet, entnimmst du der Bilderreihe.",
+            "Wo sich der Fussgängereingang befindet, entnimmst Du der Bilderreihe.",
         },
         success: "Tor öffnet sich",
         error:
@@ -227,7 +236,7 @@ export default {
       dialog: {
         title: "Bestätigung",
         text:
-          "Bist du sicher, dass du den Parkplatz wieder freigeben möchtest?<br/><br/>Nach dem Beenden hast du keinen Zutritt zum Parkhaus mehr.",
+          "Bist Du sicher, dass Du den Parkplatz wieder freigeben möchtest?<br/><br/>Nach dem Beenden hast Du keinen Zutritt zum Parkhaus mehr.",
         agree: "Beenden",
         disagree: "Zurück",
       },
@@ -249,21 +258,21 @@ export default {
       isLoading: {
         title: "Bezahlung im Gange",
         text:
-          "Die Zahlung wird überprüft. Bitte warten, du wirst automatisch weitergeleitet.",
+          "Die Zahlung wird überprüft. Bitte warten, Du wirst automatisch weitergeleitet.",
       },
     },
     confirmation: {
       appBarTitle: "Vielen Dank",
-      title: "Wir wünschen dir <br/>eine gute Heimfahrt",
+      title: "Wir wünschen Dir <br/>eine gute Heimfahrt",
       receipt: {
-        text: "Benötigst du eine Quittung?",
+        text: "Benötigst Du eine Quittung?",
         button: "Quittung öffnen",
         error:
-          "Leider konnte die Quittung nicht versendet werden. Bitte melde dich beim Administrator.",
+          "Leider konnte die Quittung nicht versendet werden. Bitte melde Dich beim Administrator.",
       },
       feedback: {
         text:
-          "Wir freuen uns über ein kurzes Feedback zu deinem Erlebnis mit Parcandi.",
+          "Wir freuen uns über ein kurzes Feedback zu Deinem Erlebnis mit Parcandi.",
         button: "Feedback geben",
       },
       linkToHome: "Zur Startseite zurück",
@@ -272,7 +281,7 @@ export default {
       title: "Quittung",
       navigate: { home: "Zurück zur Startseite" },
       text:
-        'Solltest du Fragen haben, wende dich bitte an <a href="mailto:parcandi@baloise.ch">parcandi@baloise.ch</a>',
+        'Solltest Du Fragen haben, wende Dich bitte an <a href="mailto:parcandi@baloise.ch">parcandi@baloise.ch</a>',
       taxLabel: "Mehrwertsteuer-Nr.",
       greets: "Freundliche Grüsse Parcandi",
     },
@@ -288,11 +297,15 @@ export default {
     },
     step2: {
       title: "Parkzeit",
-      text: "Parke so lange du willst",
+      text: "Parke so lange Du willst",
     },
     step3: {
       title: "Bezahlung",
       text: "Zahle nur die genutzte Parkzeit",
+    },
+    step4: {
+      title: "Kennzeichnung",
+      text: "Du erkennst die Einfahrt und die Parkplätze am Parcandi Logo",
     },
   },
   maintenance: {
@@ -300,14 +313,14 @@ export default {
     subtitle:
       "Es scheint das da etwas schief gelaufen ist.<br/> Wir arbeiten daran.",
     content:
-      'Solltest du Fragen haben, wende dich bitte an <a href="mailto:smart_parking@baloise.ch">smart_parking@baloise.ch</a>',
+      'Solltest Du Fragen haben, wende Dich bitte an <a href="mailto:smart_parking@baloise.ch">smart_parking@baloise.ch</a>',
     refresh: "Seite neu laden",
   },
   notFound: {
     title: "Oops!",
     subtitle: "Es tut uns Leid, diese Seite ist nicht verfügbar.",
     content:
-      "Buchung nicht gefunden oder einem fehlerhaften Link gefolgt? Kehre zur Startseite zurück und versuche es erneut oder überprüfe deine SMS Nachrichten.",
+      "Buchung nicht gefunden oder einem fehlerhaften Link gefolgt? Kehre zur Startseite zurück und versuche es erneut oder überprüfe Deine SMS Nachrichten.",
     linkToHome: "Zur Startseite zurück",
   },
   admin: {

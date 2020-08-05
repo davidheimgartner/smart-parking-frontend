@@ -5,15 +5,18 @@
   "author": "Gery Hirschfeld <gerhard.hirschfeld@baloise.ch> (https://github.com/baloise/)",
   "scripts": {
     "serve": "vue-cli-service serve",
+    "serve:dev": "vue-cli-service serve --mode development.prine",
     "serve:test": "vue-cli-service serve --mode staging",
     "serve:prod": "vue-cli-service serve --mode production",
     "build": "vue-cli-service build",
+    "build:dev": "vue-cli-service build --mode development.prine",
     "build:test": "vue-cli-service build --mode staging",
     "build:prod": "vue-cli-service build --mode production",
     "lint": "vue-cli-service lint",
     "semantic-release": "semantic-release",
     "postinstall": "if test \"$NODE_ENV\" = \"production\" ; then npm run build ; fi ",
     "start": "node server.js",
+    "deploy:dev": "npm run build:dev && firebase use test-parcandi-prine-majed && firebase deploy --only hosting",
     "deploy:test": "npm run build:test && firebase use test-smart-parking-ch && firebase deploy --only hosting",
     "deploy:prod": "npm run build:prod && firebase use smart-parking-ch && firebase deploy --only hosting"
   },
@@ -69,6 +72,7 @@
   "resolutions": {
     "yargs-parser": ">=13.1.2 <14.0.0 || >=15.0.1 <16.0.0 || >=18.1.2",
     "minimist": "^1.2.5",
-    "mem": ">=4.0.0"
+    "mem": ">=4.0.0",
+    "dot-prop": "^5.1.1"
   }
 }
