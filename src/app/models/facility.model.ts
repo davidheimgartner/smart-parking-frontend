@@ -13,6 +13,7 @@ export class FacilityModel {
   parkingHint!: TranslatedTexts
   description!: TranslatedTexts
   openingHours!: TranslatedTexts
+  pricing!: FacilityPricing
 
   get occupied(): number {
     return this.capacity - this.free
@@ -36,6 +37,11 @@ export interface FacilityImages {
   categories: string
   map: string
   carousel: string[]
+}
+
+export class FacilityPricing {
+  hourly!: number;
+  daily!: number;
 }
 
 export interface TranslatedTexts {

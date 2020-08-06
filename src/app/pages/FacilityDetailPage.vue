@@ -38,7 +38,7 @@
         >
         <Hint :content="$t('facility.detail.reserve.hint')" />
         <v-divider></v-divider>
-        <Prices />
+        <Prices :facility="facility" />
         <v-divider></v-divider>
         <OpeningHours :text="facility.openingHours.de" />
         <v-divider></v-divider>
