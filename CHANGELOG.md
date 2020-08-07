@@ -1,3 +1,10 @@
+## [1.32.4](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.32.3...v1.32.4) (2020-08-07)
+
+
+### Performance Improvements
+
+* **new-deployments:** disabled sw for faster updates ([6a3fbd1](https://github.com/bet-smart-parking/smart-parking-frontend/commit/6a3fbd1d4f44f9dbf4aecfb595af5396c56b308b))
+
 ## [1.32.3](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.32.2...v1.32.3) (2020-08-07)
 
 
