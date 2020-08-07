@@ -34,7 +34,7 @@ import "@/app/filters/join-texts.filter"
  * Last but not least, we import the main application.
  */
 import App from "@/app/App.vue"
-import "./registerServiceWorker"
+// import "./registerServiceWorker"
 
 Vue.config.productionTip = false
 
