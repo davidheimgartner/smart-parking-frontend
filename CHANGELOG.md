@@ -1,3 +1,10 @@
+## [1.32.3](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.32.2...v1.32.3) (2020-08-07)
+
+
+### Bug Fixes
+
+* **phone-validator:** fixed german phone validator ([#117](https://github.com/bet-smart-parking/smart-parking-frontend/issues/117)) ([dab02ee](https://github.com/bet-smart-parking/smart-parking-frontend/commit/dab02ee26d2d13ba3214869f4cc355880d651c25))
+
 ## [1.32.2](https://github.com/bet-smart-parking/smart-parking-frontend/compare/v1.32.1...v1.32.2) (2020-07-28)
 
 
