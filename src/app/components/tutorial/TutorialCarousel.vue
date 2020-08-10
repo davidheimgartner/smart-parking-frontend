@@ -53,6 +53,7 @@ export default defineComponent({
     const touch = {
       left: () => carousel.value++,
       right: () => carousel.value--,
+
     }
 
     function next() {
