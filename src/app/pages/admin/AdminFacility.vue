@@ -6,7 +6,7 @@
       :gates="gates"
     />
     <br />
-    <AdminFacilityTable :loading="isLoadingBookings" :bookings="bookings" />
+    <AdminFacilityTable :loading="isLoadingBookings" :bookings="bookings" :facility="facility" />
   </section>
 </template>
 

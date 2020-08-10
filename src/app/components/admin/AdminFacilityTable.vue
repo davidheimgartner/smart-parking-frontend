@@ -56,7 +56,7 @@
         <ParkTime :startedAt="item.startedAt" :stoppedAt="item.stoppedAt" />
       </template>
       <template v-slot:item.price="{ item }">
-        <ParkPrice :startedAt="item.startedAt" :stoppedAt="item.stoppedAt" />
+        <ParkPrice :startedAt="item.startedAt" :stoppedAt="item.stoppedAt" :facility="facility" />
       </template>
       <!-- Expanden Body -->
       <template v-slot:expanded-item="{ headers, item }">
@@ -77,6 +77,7 @@ import { appConfig } from "../../../config/app.config"
 import ParkPrice from "@/app/components/booking/ParkPrice.vue"
 import ParkTime from "@/app/components/booking/ParkTime.vue"
 import AdminFacilityTableDetail from "@/app/components/admin/AdminFacilityTableDetail.vue"
+import { FacilityModel } from '@/app/models/facility.model'
 
 export default defineComponent({
   components: {
@@ -88,6 +89,10 @@ export default defineComponent({
     bookings: {
       type: Array as () => Array<BookingModel>,
       default: [],
+    },
+    facility: {
+      type: Object as () => FacilityModel,
+      default: {} as FacilityModel,
     },
     loading: {
       type: Boolean,
