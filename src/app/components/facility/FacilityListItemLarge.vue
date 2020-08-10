@@ -7,9 +7,10 @@
           style="width: 100%;"
         >
           <v-img
-            class="white--text align-end"
+            class="white--text align-end test-image"
             height="160px"
             :src="facility.thumbnail"
+            position="0 0"
           >
           </v-img>
           <v-card-title v-text="facility.name"></v-card-title>
@@ -74,4 +75,5 @@ export default defineComponent({
     padding-bottom: 0;
   }
 }
+
 </style>
