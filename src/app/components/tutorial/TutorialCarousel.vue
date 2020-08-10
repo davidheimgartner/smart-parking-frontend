@@ -51,8 +51,8 @@ export default defineComponent({
     const carousel = ref(0)
 
     const touch = {
-      left: () => carousel.value--,
-      right: () => carousel.value++,
+      left: () => carousel.value++,
+      right: () => carousel.value--,
     }
 
     function next() {
