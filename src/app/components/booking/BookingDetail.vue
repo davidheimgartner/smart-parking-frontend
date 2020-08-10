@@ -24,8 +24,8 @@
     </div>
 
     <BookingDetailInfoBox
-      :hint="facility.parkingHint.de"
       :startedAt="booking.startedAt"
+      :facility="facility"
     />
     <br />
     <Subtitle>

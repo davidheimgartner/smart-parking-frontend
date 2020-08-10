@@ -10,13 +10,15 @@ import {
   onMounted,
 } from "@vue/composition-api"
 import { calculatePrice } from "@/app/utils/price-calculator.util"
+import { FacilityModel } from '@/app/models/facility.model'
 
 export default defineComponent({
   props: {
     startedAt: Date,
     stoppedAt: Date,
+    facility: FacilityModel,
   },
-  setup: (props: { startedAt: Date; stoppedAt: Date | null }) => {
+  setup: (props: { startedAt: Date; stoppedAt: Date | null, facility: FacilityModel }) => {
     const parkPriceString = ref<string>("")
 
     const timeInterval = setInterval(() => calcNewParkPriceString(), 5000)
@@ -26,6 +28,8 @@ export default defineComponent({
         parkPriceString.value = calculatePrice(
           props.startedAt,
           props.stoppedAt ? props.stoppedAt : new Date(),
+          props.facility.pricing.hourly,
+          props.facility.pricing.daily,
         )
       }
     }

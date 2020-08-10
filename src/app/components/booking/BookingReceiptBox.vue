@@ -40,6 +40,7 @@
           <ParkPrice
             :startedAt="booking.startedAt"
             :stoppedAt="booking.stoppedAt"
+            :facility="facility"
           />
         </td>
       </tr>
@@ -87,7 +88,7 @@ export default defineComponent({
     let isPristine = true
 
     const taxAmount = computed(() => {
-      const num = (calculatePriceRawByBooking(props.booking) / 100) * 7.7
+      const num = (calculatePriceRawByBooking(props.booking, props.facility) / 100) * 7.7
       return Math.round((num + Number.EPSILON) * 100) / 100
     })
     const startedAt = computed(() => formatDate(props.booking.startedAt))

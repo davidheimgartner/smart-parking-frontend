@@ -33,7 +33,6 @@ import { calculatePriceRawByBooking } from "@/app/utils/price-calculator.util"
 import { formatDate } from "@/app/utils/date.util"
 import { FacilityModel } from "@/app/models/facility.model"
 import ParkTime from "@/app/components/booking/ParkTime.vue"
-import ParkPrice from "@/app/components/booking/ParkPrice.vue"
 import Hint from "@/app/components/common/Hint.vue"
 import Content from "@/app/components/common/Content.vue"
 import BookingReceiptBox from "@/app/components/booking/BookingReceiptBox.vue"
@@ -42,7 +41,6 @@ import Feedback from "@/app/components/common/Feedback.vue"
 export default defineComponent({
   components: {
     ParkTime,
-    ParkPrice,
     Hint,
     Content,
     BookingReceiptBox,
@@ -63,7 +61,7 @@ export default defineComponent({
     const Browser = useBrowser()
 
     const amount = computed(
-      () => `${calculatePriceRawByBooking(props.booking)}00`,
+      () => `${calculatePriceRawByBooking(props.booking, props.facility)}00`,
     )
     const startedAt = computed(() => formatDate(props.booking.startedAt))
     const stoppedAt = computed(() => formatDate(props.booking.stoppedAt))
