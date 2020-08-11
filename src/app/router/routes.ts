@@ -50,6 +50,12 @@ export const routes: RouteConfig[] = [
             component: () => import("../pages/terms/DataPrivacyPage.vue"),
           },
           {
+            path: "/terms/cookies-policy",
+            name: "terms.cookies",
+            ...guest,
+            component: () => import("../pages/terms/CookiesPage.vue"),
+          },
+          {
             path: "",
             redirect: "terms", // default child path
           },

@@ -7,13 +7,16 @@
       <v-tab :to="{ name: 'terms.privacy' }">
         {{ $t("terms.privacy.nav") }}
       </v-tab>
+      <v-tab :to="{ name: 'terms.cookies' }">
+        {{ $t("terms.cookies.nav") }}
+      </v-tab>
     </v-tabs>
     <v-container>
       <router-view />
     </v-container>
 
     <!-- <v-container class="terms">
-      
+
     </v-container> -->
   </section>
 </template>
