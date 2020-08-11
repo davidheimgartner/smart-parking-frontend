@@ -20,6 +20,9 @@ m<template>
           >{{ $t('admin.table.action.detail') }}</v-btn
         >
       </template>
+      <template v-slot:item.prices="{ item }">
+        {{ item.pricing.hourly }}.- / {{ item.pricing.daily }}.-
+      </template>
     </v-data-table>
   </section>
 </template>
@@ -42,6 +45,7 @@ export default defineComponent({
       Header("Ort", "city"),
       Header("Gebuchte Plätze", "occupied"),
       Header("Anzahl Plätze", "capacity"),
+      Header("Preise", "prices"),
       Header("Aktion", "action"),
     ]
 
